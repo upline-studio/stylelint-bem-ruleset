@@ -1,13 +1,16 @@
 {
   "name": "@up-line/stylelint-bem-ruleset",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "repository": "https://github.com/upline-studio/stylelint-bem-ruleset",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "keywords": ["stylelint-plugin", "bem"],
+  "keywords": [
+    "stylelint-plugin",
+    "bem"
+  ],
   "author": "@vaiil<https://github.com/vaiil>",
   "license": "ISC",
   "peerDependencies": {

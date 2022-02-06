@@ -4,7 +4,7 @@
 
 Run
 ```bash
-npm i stylelint-bem-ruleset
+npm i @up-line/stylelint-bem-ruleset
 ```
 Add to `.stylelintrc.js`
 ```js

@@ -9,7 +9,7 @@ npm i @up-line/stylelint-bem-ruleset
 Add to `.stylelintrc.js`
 ```js
 module.exports = {
-  extends: [
+  plugins: [
     '@up-line/stylelint-bem-ruleset'
   ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "@up-line/stylelint-bem-ruleset",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "repository": "https://github.com/upline-studio/stylelint-bem-ruleset",
   "main": "index.js",

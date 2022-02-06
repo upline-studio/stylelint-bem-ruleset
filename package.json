@@ -11,7 +11,7 @@
   "author": "@vaiil<https://github.com/vaiil>",
   "license": "ISC",
   "peerDependencies": {
-    "stylelint": "^14.3.0"
+    "stylelint": "^13|^14"
   },
   "devDependencies": {
     "jest": "^27.5.0",

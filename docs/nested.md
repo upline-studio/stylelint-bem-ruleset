@@ -7,7 +7,7 @@ It forbids to break block, element or mod name and forces splitting between them
 
 ```json
 {
-  "@up-line/stylelint-bem-ruleset/nested": true
+  "stylelint-bem-ruleset/nested": true
 }
 ```
 

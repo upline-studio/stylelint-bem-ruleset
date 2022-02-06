@@ -1,7 +1,8 @@
 const stylelint = require('stylelint')
 const { isStringOrRegex } = require('./utils')
+const { pluginName } = require('./const')
 
-const ruleName = 'stylelint-bem-ruleset/classnames'
+const ruleName = `${pluginName}/classnames`
 
 const defaultPreset = {
   word: '[a-z]+',

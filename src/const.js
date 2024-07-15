@@ -1,1 +1,1 @@
-module.exports.pluginName = 'stylelint-bem-ruleset'
+export const pluginName = 'stylelint-bem-ruleset';

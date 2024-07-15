@@ -1,6 +1,7 @@
-const stylelint = require('stylelint')
-const { isStringOrRegex } = require('./utils')
-const { pluginName } = require('./const')
+import {pluginName} from "./const";
+import stylelint from "stylelint";
+import {isStringOrRegex} from "./utils";
+
 
 const ruleName = `${pluginName}/classnames`
 
@@ -33,10 +34,10 @@ const optionsSchema = {
   ]
 }
 
-module.exports = stylelint.createPlugin(
-  ruleName,
-  function (_, secondaryOptionObject) {
-    return function (postcssRoot, postcssResult) {
+export default stylelint.createPlugin(
+    ruleName,
+     (_, secondaryOptionObject)  => {
+    return async  (postcssRoot, postcssResult) => {
       if(secondaryOptionObject) {
         const validOptions = stylelint.utils.validateOptions(
           postcssResult,
@@ -52,7 +53,7 @@ module.exports = stylelint.createPlugin(
         }
       }
 
-      stylelint.utils.checkAgainstRule(
+      await stylelint.utils.checkAgainstRule(
         {
           ruleName: 'selector-class-pattern',
           ruleSettings: [
@@ -76,8 +77,8 @@ module.exports = stylelint.createPlugin(
       )
     }
   }
-)
+);
 
-module.exports.ruleName = ruleName
-module.exports.messages = messages
-module.exports.meta = meta
+export {ruleName}
+export {messages}
+export {meta}

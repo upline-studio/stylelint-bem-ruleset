@@ -1,4 +1,4 @@
-const bemClassname = require('./src/classnames')
-const nested = require('./src/nested')
+import nested from "./src/nested";
+import bemClassname from "./src/classnames";
 
-module.exports = [bemClassname, nested]
+export default [bemClassname, nested];

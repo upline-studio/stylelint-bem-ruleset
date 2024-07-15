@@ -25,6 +25,12 @@ testRule({
     {
       code: '.bem-block__bem-element_modifier-name_modifier-value {}'
     },
+    {
+      code: '.bem-block__bem-element_modifier-name_modifier-value[hidden] {}'
+    },
+    {
+      code: '.bem-block__bem-element_modifier-name_modifier-value[aria-attr="true"] {}'
+    },
   ],
 
   reject: [

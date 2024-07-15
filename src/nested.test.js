@@ -70,6 +70,17 @@ testRule({
     {
       code:
         `.block {
+  &__elem {
+  &-test {}
+  }
+}`,
+      message: messages.wrongNesting,
+      line: 3,
+      column: 3
+    },
+    {
+      code:
+        `.block {
   &__elm_mod {}
 }`,
       message: messages.wrongNesting,
